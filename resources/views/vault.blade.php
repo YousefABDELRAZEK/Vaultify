@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="/box-svgrepo-com(1).png">
 <link id="theme-stylesheet" rel="stylesheet" href="{{ asset('css/light.css') }}">
 <style>
   /* From Uiverse.io by Galahhad */ 

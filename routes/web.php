@@ -4,12 +4,13 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
 
+//Home route 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-
+//Apply middleware on the following routes
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

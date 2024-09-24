@@ -22,6 +22,11 @@ class FileController extends Controller
         return view('vault', compact('files', 'query'));
     }
 
+
+
+
+    
+
     public function uploadFile(Request $request)
     {
         $request->validate([
@@ -43,6 +48,11 @@ class FileController extends Controller
         return redirect()->route('vault')->with('success', 'File uploaded successfully');
     }
 
+
+
+
+    
+
     public function download($id)
     {
         $file = File::findOrFail($id);
@@ -54,6 +64,10 @@ class FileController extends Controller
 
         return response()->download($filePath, $file->name);
     }
+
+
+
+    
     public function open($name)
     {
         // Decode URL-encoded filename
@@ -73,15 +87,15 @@ $name = urldecode($name);
         // Return the file response
         return response()->file($filePath);
     }
+
+
+
+    
     
     public function search(Request $request)
     {
         return $this->showFiles($request);
     }
-    
-    
-
-    
     
     
     
